@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+
+    <color name="gradientMixed">#D27696</color>
+
+
+
+    <!-- Définir la couleur principale -->
+    <color name="colorPrimary">#607DA8</color>
+
+    <!-- Définir la couleur de fond des EditText -->
+    <color name="editTextBG">#F1F1F1</color>
+
+    <!-- Définir la couleur du texte -->
+    <color name="textColor">#000000</color>
+
+    <color name="transparent">#00000000</color>
+
+
+
+        <!-- Couleur rouge de base -->
+        <color name="red">#FF0000</color>
+
+        <!-- Variantes de rouge (optionnel) -->
+        <color name="red_light">#FF5252</color>
+        <color name="red_dark">#D32F2F</color>
+        <color name="red_error">#F44336</color>
+
+    <color name="colorPrimaryDark">#303F9F</color> <!-- Remplacez par la couleur que vous voulez -->
+    <color name="colorPrimaryLight">#5C6BC0</color> <!-- Remplacez par la couleur que vous voulez -->
+
+
+
+</resources>

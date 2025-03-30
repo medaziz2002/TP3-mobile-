@@ -1,0 +1,99 @@
+<resources>
+    <!-- Anciennes chaînes existantes -->
+    <string name="app_name">Nom de Application</string>
+    <string name="cancel_button">Annuler</string>
+    <string name="add_button">Ajouter</string>
+    <string name="ready_to_manage">Prêt à gérer votre agenda ?</string>
+    <string name="signup_button">S\'inscrire</string>
+    <string name="login_button">Se connecter</string>
+
+    <!-- Nouvelles chaînes ajoutées -->
+    <string name="login_title">Se connecter</string>
+    <string name="username_hint">Nom d\'utilisateur</string>
+    <string name="password_hint">Mot de passe</string>
+    <string name="back_button">Retour</string>
+    <string name="menu_button">Menu</string>
+    <string name="select_date">Sélectionnez une date</string>
+
+    <string name="events_for_this_date">Événements pour cette date:</string>
+    <string name="add_event">Ajouter un événement</string>
+
+    <!-- New strings for SignupFragment -->
+    <string name="signup_title">S\'inscrire</string>
+    <string name="firstname_hint">Prénom</string>
+    <string name="lastname_hint">Nom</string>
+    <string name="username_signup_hint">Nom d\'utilisateur</string>
+    <string name="password_signup_hint">Mot de passe</string>
+    <string name="email_hint">Email</string>
+    <string name="phone_hint">Numéro de téléphone</string>
+    <string name="birthdate_hint">Date de naissance</string>
+    <string name="already_have_account">Déjà un compte ? se connecter</string>
+
+    <string name="event_add">Ajouter un événement</string>
+    <string name="event_edit">Modifier un événement</string>
+    <string name="event_delete">Supprimer un événement</string>
+    <string name="event_start_time">Heure début</string>
+    <string name="event_end_time">Heure fin</string>
+    <string name="event_description">Description de l\'activité</string>
+    <string name="event_title">Titre de l\'événement</string>
+
+    <string name="menu_title">Bienvenue</string>
+
+    <string name="username_required">Le nom d\'utilisateur est requis</string>
+    <string name="password_required">Le mot de passe est requis</string>
+    <string name="login_success">Connexion réussie</string>
+    <string name="login_error">Nom d\'utilisateur ou mot de passe incorrect</string>
+    <string name="generic_error">Une erreur est survenue</string>
+
+    <string name="slot_load_error">Erreur de chargement du créneau</string>
+    <string name="start_time_required">L\'heure de début est requise</string>
+    <string name="end_time_required">L\'heure de fin est requise</string>
+    <string name="end_time_after_start">L\'heure de fin doit être après l\'heure de début</string>
+    <string name="description_required">La description est requise</string>
+    <string name="no_events_for_date">Aucun événement pour cette date</string>
+
+    <string name="confirm_delete_title">Confirmer la suppression</string>
+    <string name="confirm_delete_message">Voulez-vous vraiment supprimer cet événement ?</string>
+    <string name="delete">Supprimer</string>
+    <string name="event_deleted">Événement supprimé</string>
+    <string name="cancel">Annuler</string>
+    <string name="event_added">Événement ajouté</string>
+    <string name="add_error">Erreur lors de l\'ajout</string>
+    <string name="edit_slot_title">Modifier le créneau</string>
+    <string name="save">Enregistrer</string>
+    <string name="slot_updated">Créneau mis à jour</string>
+
+    <string name="lastname_required">Le nom est requis</string>
+    <string name="invalid_login">Login invalide (doit commencer par une lettre et max 10 caractères)</string>
+    <string name="login_taken">Ce nom d\'utilisateur est déjà pris</string>
+    <string name="password_length_error">Le mot de passe doit contenir au moins 6 caractères</string>
+    <string name="email_required">L\'email est requis</string>
+    <string name="invalid_email">Email invalide</string>
+    <string name="email_taken">Cet email est déjà utilisé</string>
+    <string name="phone_required">Le téléphone est requis</string>
+    <string name="birthdate_required">La date de naissance est requise</string>
+    <string name="signup_success">Inscription réussie!</string>
+    <string name="signup_error">Erreur lors de l\'inscription</string>
+    <string name="firstname_required">Le prénom est requis</string>
+
+    <!-- New strings for UpdateUserInformations -->
+    <string name="leave_empty_to_keep">Laissez vide pour ne pas changer</string>
+    <string name="button_clicked_log">Bouton cliqué - Mode: %s</string>
+    <string name="edit_mode">Édition</string>
+    <string name="create_mode">Création</string>
+    <string name="update_attempt_log">Tentative de mise à jour avec currentUserId: %d</string>
+    <string name="invalid_user_id">Erreur: ID utilisateur invalide</string>
+    <string name="invalid_data">Données invalides</string>
+    <string name="profile_updated">Profil mis à jour</string>
+    <string name="update_failed">Échec de la mise à jour</string>
+    <string name="system_error_prefix">Erreur système: </string>
+    <string name="error_prefix">Erreur: </string>
+    <string name="invalid_phone">Téléphone invalide (8 chiffres min)</string>
+    <string name="password_min_length">6 caractères minimum</string>
+
+    <string name="menu_lang_fr">🇫🇷 Français</string>
+    <string name="menu_lang_en">🇬🇧 Anglais</string>
+    <string name="profile">👤 Profil</string>
+    <string name="menu_logout">🚪 Déconnexion</string>
+
+</resources>

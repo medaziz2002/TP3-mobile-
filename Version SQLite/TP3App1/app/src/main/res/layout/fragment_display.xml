@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".DisplayFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Bienvenue"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/NomPrenom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="222dp"
+                android:layout_height="123dp"
+                android:src="@drawable/logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/NomPrenom" />
+
+            <LinearLayout
+                android:id="@+id/formContainer"
+                android:layout_width="359dp"
+                android:layout_height="305dp"
+                android:background="@drawable/white_background"
+                android:orientation="vertical"
+                android:padding="1dp"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="31dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:id="@+id/imgViewdateNaissance"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@color/gradientMixed"
+                        android:padding="8dp"
+                        android:src="@drawable/calendar"
+                        app:tint="@android:color/white" />
+
+                    <EditText
+                        android:id="@+id/dateNaissance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imgViewdateNaissance"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/imgViewdateNaissance"
+                        android:background="@color/editTextBG"
+                        android:hint="Date de naissance"
+                        android:paddingLeft="20dp"
+                        android:focusable="false"
+                        android:clickable="false"
+                        android:inputType="none"
+                        android:cursorVisible="false"
+                        android:textSize="15sp" />
+
+                    <DatePicker
+                        android:id="@+id/datePicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:calendarViewShown="true"
+                        android:datePickerMode="spinner"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <!-- Champ Numéro de Téléphone -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="31dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:id="@+id/imgViewnumTelephone"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@color/gradientMixed"
+                        android:padding="8dp"
+                        android:src="@drawable/phone_call"
+                        app:tint="@android:color/white" />
+
+                    <EditText
+                        android:id="@+id/numTelephone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imgViewnumTelephone"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/imgViewnumTelephone"
+                        android:background="@color/editTextBG"
+                        android:hint="numéro de téléphone"
+                        android:paddingLeft="20dp"
+                        android:focusable="false"
+                        android:clickable="false"
+                        android:inputType="none"
+                        android:cursorVisible="false"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!-- Champ Email -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="31dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:id="@+id/imgViewadresseEmail"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@color/gradientMixed"
+                        android:padding="8dp"
+                        android:src="@drawable/email"
+                        app:tint="@android:color/white" />
+
+                    <EditText
+                        android:id="@+id/adresseEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imgViewadresseEmail"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/imgViewadresseEmail"
+                        android:background="@color/editTextBG"
+                        android:hint="Adresse mail"
+                        android:focusable="false"
+                        android:clickable="false"
+                        android:inputType="none"
+                        android:cursorVisible="false"
+                        android:paddingLeft="20dp"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!-- Champ Login -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="31dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:id="@+id/imgView_userlogin"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@color/gradientMixed"
+                        android:padding="8dp"
+                        android:src="@drawable/img_authentication"
+                        app:tint="@android:color/white" />
+
+                    <EditText
+                        android:id="@+id/login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imgView_userlogin"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/imgView_userlogin"
+                        android:background="@color/editTextBG"
+                        android:hint="Login"
+                        android:focusable="false"
+                        android:clickable="false"
+                        android:inputType="none"
+                        android:cursorVisible="false"
+                        android:paddingLeft="20dp"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!-- CheckBox pour les centres d'intérêt -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="31dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:id="@+id/imgView_interests"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@color/gradientMixed"
+                        android:padding="8dp"
+                        android:src="@drawable/hobby"
+                        app:tint="@android:color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/imgView_interests"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp">
+
+                        <CheckBox
+                            android:id="@+id/checkBoxSport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sport"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:inputType="none"
+                            android:cursorVisible="false"
+                            android:textColor="@android:color/black" />
+
+                        <CheckBox
+                            android:id="@+id/checkBoxMusique"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Musique"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:inputType="none"
+                            android:cursorVisible="false"
+                            android:textColor="@android:color/black" />
+
+                        <CheckBox
+                            android:id="@+id/checkBoxLecture"
+                            android:layout_width="102dp"
+                            android:layout_height="wrap_content"
+                            android:text="Lecture"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:inputType="none"
+                            android:cursorVisible="false"
+                            android:textColor="@android:color/black" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!-- LinearLayout pour les boutons - positionné sous le formulaire -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/formContainer"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <!-- Bouton Modifier (cercle avec icône) -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnModifier"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="32dp"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="@color/gradientMixed">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/pencil"
+                        android:layout_gravity="center"
+                       />
+                   </androidx.cardview.widget.CardView>
+
+                <!-- Bouton Retour (cercle avec icône) -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnRevenir"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="@color/gradientMixed">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/back_arrow"
+                    android:layout_gravity="center"
+                    />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

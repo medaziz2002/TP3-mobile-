@@ -1,0 +1,29 @@
+
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:id="@+id/group_lang">
+    <item
+        android:id="@+id/menu_lang_fr"
+        android:title="@string/menu_lang_fr" />
+    <item
+        android:id="@+id/menu_lang_en"
+        android:title="@string/menu_lang_en" />
+</group>
+
+
+<group android:id="@+id/group_options">
+
+    <item
+        android:id="@+id/profil"
+        android:title="@string/profile" />
+
+
+    <item
+        android:id="@+id/menu_logout"
+        android:title="@string/menu_logout" />
+
+
+
+</group>
+</menu>

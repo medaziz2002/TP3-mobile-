@@ -1,0 +1,99 @@
+<resources>
+    <!-- Existing strings -->
+    <string name="app_name">Application Name</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="add_button">Add</string>
+    <string name="ready_to_manage">Ready to manage your schedule?</string>
+    <string name="signup_button">Sign Up</string>
+    <string name="login_button">Log In</string>
+
+    <!-- New strings added -->
+    <string name="login_title">Log In</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="back_button">Back</string>
+    <string name="menu_button">Menu</string>
+    <string name="select_date">Select a date</string>
+
+    <string name="events_for_this_date">Events for this date:</string>
+    <string name="add_event">Add an event</string>
+
+    <!-- New strings for SignupFragment -->
+    <string name="signup_title">Sign Up</string>
+    <string name="firstname_hint">First Name</string>
+    <string name="lastname_hint">Last Name</string>
+    <string name="username_signup_hint">Username</string>
+    <string name="password_signup_hint">Password</string>
+    <string name="email_hint">Email</string>
+    <string name="phone_hint">Phone Number</string>
+    <string name="birthdate_hint">Birthdate</string>
+    <string name="already_have_account">Already have an account? login</string>
+
+    <string name="event_add">Add an event</string>
+    <string name="event_edit">Edit event</string>
+    <string name="event_delete">Delete event</string>
+    <string name="event_start_time">Start Time</string>
+    <string name="event_end_time">End Time</string>
+    <string name="event_description">Activity Description</string>
+    <string name="event_title">Event Title</string>
+     <string name="menu_title">Welcome</string>
+
+    <string name="username_required">Username is required</string>
+    <string name="password_required">Password is required</string>
+    <string name="login_success">Login successful</string>
+    <string name="login_error">Incorrect username or password</string>
+    <string name="generic_error">An error occurred</string>
+
+
+    <string name="slot_load_error">Slot loading error</string>
+    <string name="start_time_required">Start time is required</string>
+    <string name="end_time_required">End time is required</string>
+    <string name="end_time_after_start">End time must be after start time</string>
+    <string name="description_required">Description is required</string>
+    <string name="no_events_for_date">No events for this date</string>
+    <string name="confirm_delete_title">Confirm deletion</string>
+    <string name="confirm_delete_message">Do you really want to delete this event?</string>
+    <string name="delete">Delete</string>
+    <string name="event_deleted">Event deleted</string>
+    <string name="cancel">Cancel</string>
+    <string name="event_added">Event added</string>
+    <string name="add_error">Error while adding</string>
+    <string name="edit_slot_title">Edit time slot</string>
+    <string name="save">Save</string>
+    <string name="slot_updated">Time slot updated</string>
+    <string name="lastname_required">Last name is required</string>
+    <string name="invalid_login">Invalid login (must start with a letter and max 10 characters)</string>
+    <string name="login_taken">This username is already taken</string>
+    <string name="password_length_error">Password must be at least 6 characters</string>
+    <string name="email_required">Email is required</string>
+    <string name="invalid_email">Invalid email</string>
+    <string name="email_taken">This email is already used</string>
+    <string name="phone_required">Phone number is required</string>
+    <string name="birthdate_required">Birthdate is required</string>
+    <string name="signup_success">Registration successful!</string>
+    <string name="signup_error">Registration error</string>
+    <!-- Existing strings... -->
+
+    <!-- New strings for UpdateUserInformations -->
+    <string name="leave_empty_to_keep">Leave empty to keep unchanged</string>
+    <string name="button_clicked_log">Button clicked - Mode: %s</string>
+    <string name="edit_mode">Edit</string>
+    <string name="create_mode">Create</string>
+    <string name="update_attempt_log">Update attempt with currentUserId: %d</string>
+    <string name="invalid_user_id">Error: Invalid user ID</string>
+    <string name="invalid_data">Invalid data</string>
+    <string name="profile_updated">Profile updated</string>
+    <string name="update_failed">Update failed</string>
+    <string name="system_error_prefix">System error: </string>
+    <string name="error_prefix">Error: </string>
+    <string name="invalid_phone">Invalid phone (min 8 digits)</string>
+    <string name="password_min_length">Minimum 6 characters</string>
+    <string name="firstname_required">First name is required</string>
+
+
+
+    <string name="menu_lang_fr">🇫🇷 French</string>
+    <string name="menu_lang_en">🇬🇧 English</string>
+    <string name="profile">👤 Profile</string>
+    <string name="menu_logout">🚪 Logout</string>
+</resources>

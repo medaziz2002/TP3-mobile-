@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#2C3E50"
+        android:layout_marginBottom="16dp"
+        android:text="@string/event_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <!-- Start Time Field -->
+        <RelativeLayout
+            android:id="@+id/relativeLayout_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp">
+
+            <ImageView
+                android:id="@+id/imgView_startIcon"
+                android:layout_width="46dp"
+                android:layout_height="45dp"
+                android:background="@color/colorPrimary"
+                android:padding="8dp"
+                android:src="@drawable/clock"
+                app:tint="@color/white" />
+
+            <EditText
+                android:id="@+id/editStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:hint="@string/event_start_time"
+                android:inputType="time"
+                android:focusable="false"
+                android:clickable="true"
+                android:textColor="@android:color/black"
+                android:background="@drawable/edit_text_bg"
+                android:padding="12dp"/>
+        </RelativeLayout>
+
+        <!-- End Time Field -->
+        <RelativeLayout
+            android:id="@+id/relativeLayout_end"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp">
+
+            <ImageView
+                android:id="@+id/imgView_endIcon"
+                android:layout_width="45dp"
+                android:layout_height="46dp"
+                android:background="@color/colorPrimary"
+                android:padding="8dp"
+                android:src="@drawable/clock"
+                app:tint="@color/white" />
+
+            <EditText
+                android:id="@+id/editEnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:hint="@string/event_end_time"
+                android:inputType="time"
+                android:focusable="false"
+                android:clickable="true"
+                android:textColor="@android:color/black"
+                android:background="@drawable/edit_text_bg"
+                android:padding="12dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/event_description"
+        android:textColor="@android:color/black"
+        android:background="@drawable/edit_text_bg"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:minLines="3"
+        android:gravity="top"/>
+</LinearLayout>
